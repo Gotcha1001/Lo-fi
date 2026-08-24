@@ -38,7 +38,7 @@ function SfxControl({ sfx }: Props) {
             },
           },
         }}
-        onChange={(e, newValue) => {
+        onChange={(_e, newValue) => {
           setVolume(newValue as number);
 
           if (audioRef.current) {
